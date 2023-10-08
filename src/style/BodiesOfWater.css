@@ -1,0 +1,14 @@
+.BodiesOfWater {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.BodiesOfWater-waterbody-infoCards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin: -0.1px;
+  padding: 20px;
+  overflow: scroll;
+}

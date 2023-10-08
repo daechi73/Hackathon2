@@ -1,3 +1,6 @@
+.infoCard {
+}
+
 .home-waterbody-infoCard {
   box-shadow: 4px 4px 2px 1px rgba(111, 111, 168, 0.2);
   border-radius: 14px;
@@ -21,9 +24,32 @@
   padding: 10px;
   box-shadow: 4px 4px 2px 1px rgba(111, 111, 168, 0.2);
   border-radius: 14px;
+  height: 230px;
 }
 .home-species-infoCard-img {
   width: 150px;
   height: 150px;
+  border-radius: 14px 14px 0 0;
+}
+.species-species-infoCard {
+  padding: 10px;
+  box-shadow: 4px 4px 2px 1px rgba(111, 111, 168, 0.2);
+  border-radius: 14px;
+  width: 150px;
+}
+.species-species-infoCard-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 14px 14px 0 0;
+}
+
+.BodiesOfWater-waterbody-infoCard {
+  box-shadow: 4px 4px 2px 1px rgba(111, 111, 168, 0.2);
+  border-radius: 14px;
+  width: 330px;
+}
+.BodiesOfWater-waterbody-infoCard-img {
+  width: 330px;
+  height: 250px;
   border-radius: 14px 14px 0 0;
 }

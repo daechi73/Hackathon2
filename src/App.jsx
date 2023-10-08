@@ -8,6 +8,8 @@ import Login from "./pages/Login";
 import Nav from "./components/Nav";
 import StatusBar from "./components/StatusBar";
 import Home from "./pages/Home";
+import Species from "./pages/Species";
+import BodiesOfWater from "./pages/BodiesOfWater";
 
 function App() {
   return (

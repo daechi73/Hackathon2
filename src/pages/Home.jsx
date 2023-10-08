@@ -2,20 +2,11 @@ import "../style/Home.css";
 import InfoCard from "../components/InfoCard";
 import Img from "../assets/imgs/GrenadierPond.jpg";
 import Img2 from "../assets/imgs/fish.jpg";
-import CardSlider from "../components/CardSlider";
-
+import Discover from "../components/Discover";
 const Home = () => {
   return (
     <div className="home">
-      <div className="discover">
-        <div className="nav-map-icon container-nav-icon">
-          <i className="fa fa-map-marker nav-icon" aria-hidden="true"></i>
-        </div>
-        <div className="container-title-locationMenu">
-          <div className="discover-title">Discover</div>
-          <div className="discover-locationMenu">LocationMenu</div>
-        </div>
-      </div>
+      <Discover />
       <div className="home-waterbody">
         <div className="container-waterbody-title-viewOption">
           <div className="waterbody-title">Waterbodies Nearby</div>
@@ -27,28 +18,28 @@ const Home = () => {
             imgClassName="home-waterbody-infoCard-img"
             src={Img}
             name="Grenadier Pond"
-            subInfo="useless"
+            subInfo="Toronto, Canada"
           />
           <InfoCard
             className="home-waterbody-infoCard"
             imgClassName="home-waterbody-infoCard-img"
             src={Img}
             name="Grenadier Pond"
-            subInfo="useless"
+            subInfo="Toronto, Canada"
           />
           <InfoCard
             className="home-waterbody-infoCard"
             imgClassName="home-waterbody-infoCard-img"
             src={Img}
             name="Grenadier Pond"
-            subInfo="useless"
+            subInfo="Toronto, Canada"
           />
           <InfoCard
             className="home-waterbody-infoCard"
             imgClassName="home-waterbody-infoCard-img"
             src={Img}
             name="Grenadier Pond"
-            subInfo="useless"
+            subInfo="Toronto, Canada"
           />
         </div>
       </div>

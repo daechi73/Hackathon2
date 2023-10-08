@@ -1,6 +1,6 @@
 .home {
-  min-height: 100%;
-  padding-bottom: 8rem;
+  height: 100%;
+  padding-bottom: 10rem;
 }
 .container-waterbody-title-viewOption {
   display: flex;
@@ -10,15 +10,7 @@
 .waterbody-title {
   font-weight: 800;
 }
-.discover {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-}
-.discover-title {
-  font-size: 0.8rem;
-  color: rgb(198, 195, 188);
-}
+
 .home-waterbody {
   margin-top: 30px;
 }
@@ -26,7 +18,7 @@
   display: flex;
   flex-wrap: nowrap;
   gap: 10px;
-  margin: -10px;
+  margin: -0.1px;
   padding: 20px;
   overflow: scroll;
 }
@@ -43,7 +35,7 @@
   display: flex;
   flex-wrap: nowrap;
   gap: 10px;
-  margin: -10px;
+  margin: -0.1px;
   padding: 20px;
   overflow: scroll;
   margin-bottom: 20px;

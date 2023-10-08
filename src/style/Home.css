@@ -1,0 +1,21 @@
+.home {
+  height: 100%;
+}
+.discover {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.discover-title {
+  font-size: 0.8rem;
+  color: rgb(198, 195, 188);
+}
+.waterbodies {
+  margin-top: 30px;
+  height: 50%;
+}
+.infoCards {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+}

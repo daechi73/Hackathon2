@@ -10,12 +10,14 @@ import Home from "./pages/Home";
 import Species from "./pages/Species";
 import BodiesOfWater from "./pages/BodiesOfWater";
 import ExploreScreen from "./pages/ExploreScreen";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   const [startPage, setStartPage] = useState(true);
   const [loadingPage, setLoadingPage] = useState(false);
-  const [startApp, setStartApp] = useState(false);
+  const [startApp, setStartApp] = useState(false); //false for product true for dev
   const { name } = useParams();
+
   useEffect(() => {
     setTimeout(() => {
       setLoadingPage(true);
@@ -27,14 +29,29 @@ function App() {
     }, 7000);
   }, []);
 
-  // if (startPage) return <StartScreen />;
-  // if (loadingPage) return <LoadingScreen />;
+  if (startPage) return <StartScreen />;
+  if (loadingPage) return <LoadingScreen />;
 
+  console.log(name);
   return (
     <div className="container-main">
       <StatusBar />
-      {/* {startApp && <Home />} */}
-      <ExploreScreen />
+      {startApp && <ExploreScreen /> && !name}
+      {name === "home" ? (
+        <Home />
+      ) : name === "explore" ? (
+        <ExploreScreen />
+      ) : name === "community" ? (
+        "community"
+      ) : name === "profile" ? (
+        "profile"
+      ) : name === "waterbodies" ? (
+        <BodiesOfWater />
+      ) : name === "species" ? (
+        <Species />
+      ) : (
+        <ErrorPage />
+      )}
       <Nav />
     </div>
   );

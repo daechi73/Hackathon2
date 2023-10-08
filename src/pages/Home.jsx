@@ -3,7 +3,8 @@ import InfoCard from "../components/InfoCard";
 import Img from "../assets/imgs/GrenadierPond.jpg";
 import Img2 from "../assets/imgs/fish.jpg";
 import Discover from "../components/Discover";
-import { Link } from "react-router-dom";
+import MyLink from "../components/MyLink";
+
 const Home = () => {
   return (
     <div className="home">
@@ -12,7 +13,7 @@ const Home = () => {
         <div className="container-waterbody-title-viewOption">
           <div className="waterbody-title">Waterbodies Nearby</div>
           <div className="waterbody-view">
-            <Link to="/lockness/waterbodies">view</Link>
+            <MyLink to="/home/waterbodies" text="view" className="homeView" />
           </div>
         </div>
         <div className="home-waterbody-infoCards">
@@ -49,7 +50,9 @@ const Home = () => {
       <div className="home-species">
         <div className="container-species-title-viewOption">
           <div className="species-title">Species in the this Region</div>
-          <div className="species-view">view</div>
+          <div className="species-view">
+            <MyLink to="/home/species" text="view" className="homeView" />
+          </div>
         </div>
         <div className="home-species-infoCards">
           <InfoCard

@@ -13,9 +13,9 @@
   justify-content: end;
 }
 .loadingScreen.appImg {
-  border: solid;
+  /* border: solid;
   height: 6rem;
-  width: 6rem;
+  width: 6rem; */
   border-width: 24px;
   border-radius: 8px;
   border-color: #85b19baf;
@@ -32,6 +32,10 @@
   height: 35%;
   justify-content: end;
   padding: 70px;
+}
+.logoImg {
+  height: 9rem;
+  width: 9rem;
 }
 /* 
 @media (max-width: 400px) {

@@ -13,9 +13,9 @@
     justify-content: end;
   }
   .startScreen.appImg {
-    border: solid;
+    /* border: solid;
     height: 3.7rem;
-    width: 3.7rem;
+    width: 3.7rem; */
     border-width: 13px;
     border-radius: 8px;
     border-color: #fafbeecf;
@@ -24,5 +24,9 @@
     margin-top: 20px;
     font-size: 2rem;
     color: white;
+  }
+  .logoImg {
+    height: 6rem;
+    width: 6rem;
   }
 }

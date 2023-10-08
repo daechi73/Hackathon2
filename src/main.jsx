@@ -7,7 +7,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   { path: "/", element: <App />, errorElement: <ErrorPage /> },
-  { path: "/lockness/:name", element: <App /> },
+  { path: "/:name", element: <App /> },
+  { path: "/home/:name", element: <App /> },
+  // { path: "/community", element: <App /> },
+  // { path: "/profile", element: <App /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

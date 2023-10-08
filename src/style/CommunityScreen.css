@@ -1,0 +1,38 @@
+header {
+    margin: 25px; /* Add some spacing between the elements */
+    display: flex;
+    justify-content: center;
+
+}
+
+
+header button {
+    background-color: transparent; /* Set background to transparent */
+    color: grey; /* Set text color to grey */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: normal; /* Set initial font weight */
+}
+
+header button:hover {
+    font-weight: bold; /* Change font weight on hover */
+     text-decoration: underline;
+}
+
+.info-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.CommunityScreen {
+    display: flex;
+    align-items: center;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+}

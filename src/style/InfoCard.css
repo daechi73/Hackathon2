@@ -1,0 +1,22 @@
+.waterbody-infoCard {
+  padding: 10px;
+  box-shadow: 4px 4px 2px 1px rgba(111, 111, 168, 0.2);
+}
+.container-waterbodiesTitle-viewOption {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.waterbody-infoCard-img {
+  width: 300px;
+  height: 250px;
+}
+.infoCard-info {
+  padding: 10px 10px;
+}
+.infoCard-name {
+  font-weight: 500;
+}
+.infoCard-subInfo {
+  color: rgb(166, 184, 184);
+}

@@ -1,0 +1,28 @@
+@media (max-width: 400px) {
+  .container-startScreen {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: linear-gradient(to bottom, #4eb3eea7 0%, #c0b39473 85%);
+  }
+  .startScreen.appInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 45%;
+    justify-content: end;
+  }
+  .startScreen.appImg {
+    border: solid;
+    height: 3.7rem;
+    width: 3.7rem;
+    border-width: 13px;
+    border-radius: 8px;
+    border-color: #fafbeecf;
+  }
+  .startScreen.appName {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: white;
+  }
+}

@@ -1,0 +1,47 @@
+.container-loginPage {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+}
+.loginPageTitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.container-loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+input {
+  height: 35px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: rgb(173, 173, 170);
+  padding: 0 10px;
+}
+.forgotPass {
+  color: #558098d8;
+}
+.loginBtn {
+  height: 40px;
+  border-radius: 12px;
+  background: #5c93b0ad;
+  color: white;
+  border: none;
+  font-size: 1rem;
+}
+.register {
+  text-align: center;
+  color: #558098d8;
+}
+.fa-eye-slash {
+  position: absolute;
+  top: 43%;
+  right: 20%;
+  color: rgb(122, 122, 113);
+}

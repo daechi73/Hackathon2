@@ -1,0 +1,63 @@
+.container-loadingScreen {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: white;
+}
+.loadingScreen.appInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 55%;
+  justify-content: end;
+}
+.loadingScreen.appImg {
+  border: solid;
+  height: 6rem;
+  width: 6rem;
+  border-width: 24px;
+  border-radius: 8px;
+  border-color: #85b19baf;
+}
+.loadingScreen.appName {
+  margin-top: 30px;
+  font-size: 3rem;
+  color: #558098d8;
+  font-weight: 900;
+}
+.loadingScreen-filler {
+  display: flex;
+  flex-direction: column;
+  height: 35%;
+  justify-content: end;
+  padding: 70px;
+}
+/* 
+@media (max-width: 400px) {
+  .container-LoadingScreen {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: white;
+  }
+  .LoadingScreen.appInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 45%;
+    justify-content: end;
+  }
+  .LoadingScreen.appImg {
+    border: solid;
+    height: 3.7rem;
+    width: 3.7rem;
+    border-width: 13px;
+    border-radius: 8px;
+    border-color: #fafbeecf;
+  }
+  .LoadingScreen.appName {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: white;
+  }
+} */

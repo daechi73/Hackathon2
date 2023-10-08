@@ -1,0 +1,22 @@
+.nav {
+  position: fixed;
+  bottom: 9%;
+  width: 100%;
+}
+.nav ul {
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  justify-content: center;
+}
+.nav li {
+  list-style: none;
+  font-size: 0.7rem;
+}
+.container-nav-icon {
+  display: flex;
+  justify-content: center;
+}
+.nav-icon {
+  font-size: 2rem;
+}

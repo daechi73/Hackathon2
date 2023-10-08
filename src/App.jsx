@@ -11,6 +11,9 @@ import Species from "./pages/Species";
 import BodiesOfWater from "./pages/BodiesOfWater";
 import ExploreScreen from "./pages/ExploreScreen";
 import ErrorPage from "./pages/ErrorPage";
+import CommunityPostScreen from "./pages/CommunityPostScreen";
+import CommunityScreen from "./pages/CommunityScreen";
+import CommunityUserScreen from "./pages/CommunityUserScreen";
 
 function App() {
   const [startPage, setStartPage] = useState(true);

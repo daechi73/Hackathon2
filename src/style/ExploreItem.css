@@ -1,0 +1,27 @@
+.image-container {
+    position: relative; /* Set the container to relative positioning */
+    width: 200px; /* Set the container width to create a square */
+    height: 200px; /* Set the container height to create a square */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+
+}
+
+.square-image {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Maintain the aspect ratio */
+    border-radius: 20px;
+}
+
+.description {
+    position: absolute; /* Set the description to absolute positioning */
+    width: 68%; /* Make it full width */
+    background-color: ghostwhite; /* White background */
+    opacity: 1; /* Optional: Add some opacity */
+    padding: 20px; /* Add some padding */
+    text-align: start;
+    border-radius: 0px 0px 20px 20px;
+    bottom: 20px;
+
+}

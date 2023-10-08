@@ -1,0 +1,61 @@
+.container {
+    text-align: left;
+    justify-content: center;
+    justify-items: center;
+}
+
+.image {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.text_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text_container > {
+    display: flex;
+    justify-content: start;
+}
+
+.map_image img {
+    width: 100%;
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+}
+
+.user-container i {
+    margin-right: 5px; /* Add some space between the icon and text */
+}
+
+.user-container p {
+    font-size: 10px;
+}
+
+.nameText {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.image-container button {
+    background-color: transparent;
+    color: grey;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.descriptionText {
+    font-size: 11px;
+}
+
+.image-container button:hover {
+    background-color: gray;
+    color: white;
+}

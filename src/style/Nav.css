@@ -1,10 +1,12 @@
 .nav {
   position: fixed;
-  bottom: 4%;
+  bottom: 0%;
   width: 100%;
-  backdrop-filter: blur(2px);
+  /* backdrop-filter: blur(2px); */
   border-top: solid;
   border-width: 0.1px;
+  background-color: white;
+  height: 6.5rem;
 }
 .nav ul {
   display: flex;

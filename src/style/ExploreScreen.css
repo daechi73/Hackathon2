@@ -1,72 +1,120 @@
-.location1 {
-    font-size: 14px; /* Set the font size to make it smaller */
-    color: grey; /* Set the color to grey */
-    margin-bottom: 5px; /* Add some space between the title and the address */
+/* .location1 {
+  font-size: 14px;
+  color: grey;
+  margin-bottom: 5px;
 }
 
 .location2 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .location1 {
-    margin-bottom: -30px; /* Adjust the margin to your preference */
+  margin-bottom: -30px;
 }
 
 .header_flex .fa-map-marker {
-    font-size: 30px; /* Adjust the size to your preference */
-    color: #66cccc; /* Set the color to cyan blue */
-    margin-bottom: -50px;
-    margin-top: 20px;
+  font-size: 30px;
+  color: #66cccc;
+  margin-bottom: -50px;
+  margin-top: 20px;
 }
 
 .header_flex {
-    display: flex;
-    align-items: flex-start;
-}
-
-body, html {
-    height: 100%; /* Make sure body and html take up the full height of the viewport */
-    margin: 0; /* Remove default margin */
-    display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+  display: flex;
+  align-items: flex-start;
 }
 
 .textbox {
-    margin-left: 30px;
-    margin-right: 50px;
+  margin-left: 30px;
+  margin-right: 50px;
 }
 
-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.exploreScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.exploreScreen div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .textbox {
-    align-items: flex-start;
+  align-items: flex-start;
 }
 
 .selectionflex {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
+  display: flex;
+  align-items: flex-start;
 }
 
-
 .selection-container {
-    display: flex;
-    margin-left: -80px;
-    margin-top: 5px;
+  display: flex;
+  margin-left: -80px;
+  margin-top: 5px;
 }
 
 .selection-button {
-    background-color: #66cccc;
-    border: none;
-    color: white;
-    padding: 5px 9px;
-    margin: 2px;
-    cursor: pointer;
-    border-radius: 20px 20px 20px 20px;
-    font-size: 9px
+  background-color: #66cccc;
+  border: none;
+  color: white;
+  padding: 5px 9px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 20px 20px 20px 20px;
+  font-size: 9px;
+} */
+.header_flex {
+  display: flex;
+}
+.textbox {
+  display: flex;
+}
+.map_image {
+  height: 350px;
+  width: 100%;
+}
+.container-map_image {
+  margin-bottom: 20px;
+}
+.selection-button {
+  background-color: #66cccc;
+  border: none;
+  color: white;
+  padding: 5px 9px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 20px 20px 20px 20px;
+  font-size: 9px;
+}
+.container-mapSearch {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+.mapSearchInput {
+  height: 20;
+}
+.mapSearchInput {
+  height: 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(235, 245, 253);
+  width: 60%;
+}
+.fa-search {
+}
+.selectionflex {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+.exploreCard-infoCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
 }

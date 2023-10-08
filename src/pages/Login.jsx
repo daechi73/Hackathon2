@@ -5,8 +5,16 @@ const Login = () => {
     <div className="container-loginPage">
       <div className="loginPageTitle">Login</div>
       <div className="container-loginForm">
-        <input type="text" className="inputEmail" placeholder="Email Address" />
-        <input type="text" className="inputPassword" placeholder="Password" />
+        <input
+          type="text"
+          className="inputEmail loginInput"
+          placeholder="Email Address"
+        />
+        <input
+          type="text"
+          className="inputPassword loginInput"
+          placeholder="Password"
+        />
         <i class="fa fa-eye-slash" aria-hidden="true"></i>
         <div className="container-forgotPass">
           <div className="forgotPass">Forgot Password?</div>

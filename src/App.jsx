@@ -9,6 +9,7 @@ import StatusBar from "./components/StatusBar";
 import Home from "./pages/Home";
 import Species from "./pages/Species";
 import BodiesOfWater from "./pages/BodiesOfWater";
+import ExploreScreen from "./pages/ExploreScreen";
 
 function App() {
   const [startPage, setStartPage] = useState(true);
@@ -26,13 +27,14 @@ function App() {
     }, 7000);
   }, []);
 
-  if (startPage) return <StartScreen />;
-  if (loadingPage) return <LoadingScreen />;
+  // if (startPage) return <StartScreen />;
+  // if (loadingPage) return <LoadingScreen />;
 
   return (
     <div className="container-main">
       <StatusBar />
-      {startApp && <Home />}
+      {/* {startApp && <Home />} */}
+      <ExploreScreen />
       <Nav />
     </div>
   );

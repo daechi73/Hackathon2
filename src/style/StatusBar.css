@@ -1,0 +1,9 @@
+.statusBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.status {
+  display: flex;
+  gap: 3px;
+}

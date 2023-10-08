@@ -2,6 +2,9 @@
   position: fixed;
   bottom: 4%;
   width: 100%;
+  backdrop-filter: blur(2px);
+  border-top: solid;
+  border-width: 0.1px;
 }
 .nav ul {
   display: flex;

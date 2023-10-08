@@ -6,10 +6,14 @@ import StartScreen from "./pages/StartScreen";
 import LoadingScreen from "./pages/LoadingScreen";
 import Login from "./pages/Login";
 import Nav from "./components/Nav";
+import StatusBar from "./components/StatusBar";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="container-main">
+      <StatusBar />
+      <Home />
       <Nav />
     </div>
   );

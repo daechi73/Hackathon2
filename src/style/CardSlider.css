@@ -1,0 +1,73 @@
+.card-slider {
+  display: flex;
+  padding: 20px;
+  margin: 60px;
+}
+.cards {
+  display: flex;
+  overflow: hidden;
+  gap: 5%;
+  justify-content: center;
+}
+.card-slider-btn {
+  width: 4.5rem;
+}
+/* .card-slider {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cards {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.card {
+  flex: 0 0 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.prev-button,
+.next-button {
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.prev-button:focus,
+.next-button:focus {
+  outline: none;
+}
+
+.prev-button {
+  border-radius: 5px 0 0 5px;
+}
+
+.next-button {
+  border-radius: 0 5px 5px 0;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+} */

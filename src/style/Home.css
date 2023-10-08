@@ -1,5 +1,14 @@
 .home {
-  height: 100%;
+  min-height: 100%;
+  padding-bottom: 8rem;
+}
+.container-waterbody-title-viewOption {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.waterbody-title {
+  font-weight: 800;
 }
 .discover {
   display: flex;
@@ -10,12 +19,32 @@
   font-size: 0.8rem;
   color: rgb(198, 195, 188);
 }
-.waterbodies {
+.home-waterbody {
   margin-top: 30px;
-  height: 50%;
 }
-.infoCards {
+.home-waterbody-infoCards {
   display: flex;
   flex-wrap: nowrap;
   gap: 10px;
+  margin: -10px;
+  padding: 20px;
+  overflow: scroll;
+}
+
+.container-species-title-viewOption {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.species-title {
+  font-weight: 900;
+}
+.home-species-infoCards {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin: -10px;
+  padding: 20px;
+  overflow: scroll;
+  margin-bottom: 20px;
 }

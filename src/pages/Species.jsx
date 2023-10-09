@@ -15,7 +15,7 @@ const Species = (props) => {
           return (
             <MyLink
               key={i}
-              to={"/speciesInfo/" + fish.name}
+              to={"/Hackathon2/speciesInfo/" + fish.name}
               text={
                 <InfoCard
                   className="species-species-infoCard"

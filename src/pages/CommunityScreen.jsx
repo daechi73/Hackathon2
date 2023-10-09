@@ -23,7 +23,7 @@ const CommunityScreen = () => {
 
       <div className="info-card-wrapper">
         <MyLink
-          to="/community/communityPost"
+          to="/Hackathon2/community/communityPost"
           text={
             <InfoCard
               className="species-species-infoCard"
@@ -35,7 +35,7 @@ const CommunityScreen = () => {
           }
         />
         <MyLink
-          to="/community/communityPost"
+          to="/Hackathon2/community/communityPost"
           text={
             <InfoCard
               className="species-species-infoCard"
@@ -47,7 +47,7 @@ const CommunityScreen = () => {
           }
         />
         <MyLink
-          to="/community/communityPost"
+          to="/Hackathon2/community/communityPost"
           text={
             <InfoCard
               className="species-species-infoCard"
@@ -59,7 +59,7 @@ const CommunityScreen = () => {
           }
         />{" "}
         <MyLink
-          to="/community/communityPost"
+          to="/Hackathon2/community/communityPost"
           text={
             <InfoCard
               className="species-species-infoCard"

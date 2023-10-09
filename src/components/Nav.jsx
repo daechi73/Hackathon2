@@ -10,7 +10,7 @@ const Nav = () => {
             <i className="fa fa-home nav-icon" aria-hidden="true"></i>
           </div>
           <div className="nav-title">
-            <MyLink text="Home" to="/home" />
+            <MyLink text="Home" to="/Hackathon2/home" />
           </div>
         </li>
         <li>
@@ -19,7 +19,7 @@ const Nav = () => {
           </div>
 
           <div className="nav-title">
-            <MyLink text="Explore" to="/explore" />
+            <MyLink text="Explore" to="/Hackathon2/explore" />
           </div>
         </li>
         <li>
@@ -28,7 +28,7 @@ const Nav = () => {
           </div>
 
           <div className="nav-title">
-            <MyLink text="Community" to="/community" />
+            <MyLink text="Community" to="/Hackathon2/community" />
           </div>
         </li>
         <li>
@@ -36,7 +36,7 @@ const Nav = () => {
             <i className="fa fa-user nav-icon fa-1x" aria-hidden="true"></i>
           </div>
           <div className="nav-title">
-            <MyLink text="Profile" to="/profile" />
+            <MyLink text="Profile" to="/Hackathon2/profile" />
           </div>
         </li>
       </ul>

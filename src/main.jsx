@@ -6,12 +6,12 @@ import ErrorPage from "./pages/ErrorPage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
-  { path: "/", element: <App />, errorElement: <ErrorPage /> },
-  { path: "/:name", element: <App /> },
-  { path: "/home/:name", element: <App /> },
-  { path: "/community/:name", element: <App /> },
-  { path: "/bodyOfWaterInfo/:name", element: <App /> },
-  { path: "/speciesInfo/:name", element: <App /> },
+  { path: "/Hackathon2", element: <App />, errorElement: <ErrorPage /> },
+  { path: "/Hackathon2/:name", element: <App /> },
+  { path: "/Hackathon2/home/:name", element: <App /> },
+  { path: "/Hackathon2/community/:name", element: <App /> },
+  { path: "/Hackathon2/bodyOfWaterInfo/:name", element: <App /> },
+  { path: "/Hackathon2/speciesInfo/:name", element: <App /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

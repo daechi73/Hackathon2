@@ -13,7 +13,11 @@ const Home = (props) => {
         <div className="container-waterbody-title-viewOption">
           <div className="waterbody-title">Waterbodies Nearby</div>
           <div className="waterbody-view">
-            <MyLink to="/home/waterbodies" text="view" className="homeView" />
+            <MyLink
+              to="/Hackathon2/home/waterbodies"
+              text="view"
+              className="homeView"
+            />
           </div>
         </div>
         <div className="home-waterbody-infoCards">
@@ -21,7 +25,7 @@ const Home = (props) => {
             return (
               <MyLink
                 key={i}
-                to={"/bodyOfWaterInfo/" + body.name}
+                to={"/Hackathon2/bodyOfWaterInfo/" + body.name}
                 text={
                   <InfoCard
                     className="home-waterbody-infoCard"
@@ -40,7 +44,11 @@ const Home = (props) => {
         <div className="container-species-title-viewOption">
           <div className="species-title">Species in the this Region</div>
           <div className="species-view">
-            <MyLink to="/home/species" text="view" className="homeView" />
+            <MyLink
+              to="/Hackathon2/home/species"
+              text="view"
+              className="homeView"
+            />
           </div>
         </div>
 
@@ -49,7 +57,7 @@ const Home = (props) => {
             return (
               <MyLink
                 key={i}
-                to={"/speciesInfo/" + fish.name}
+                to={"/Hackathon2/speciesInfo/" + fish.name}
                 text={
                   <InfoCard
                     className="home-species-infoCard"

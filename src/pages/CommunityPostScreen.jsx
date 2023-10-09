@@ -15,7 +15,10 @@ const CommunityPostScreen = () => {
         <div className="text_container">
           <div className="user-container">
             <i className="fa fa-user" aria-hidden="true"></i>
-            <MyLink to="/community/communityUser" text={<p>User123</p>} />
+            <MyLink
+              to="/Hackathon2/community/communityUser"
+              text={<p>User123</p>}
+            />
           </div>
 
           <div>

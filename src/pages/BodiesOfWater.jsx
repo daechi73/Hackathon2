@@ -15,7 +15,7 @@ const BodiesOfWater = (props) => {
           return (
             <MyLink
               key={i}
-              to={"/bodyOfWaterInfo/" + body.name}
+              to={"/Hackathon2/bodyOfWaterInfo/" + body.name}
               text={
                 <InfoCard
                   className="BodiesOfWater-waterbody-infoCard"

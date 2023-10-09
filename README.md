@@ -1,8 +1,14 @@
-# React + Vite
+# Whats Up with This Water?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Webapplication built for mobile screens. (size of an iphone).
 
-Currently, two official plugins are available:
+To see in computer chrome browser:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- open google dev tools (ctrl+shift+i)
+- toggle device toolbar (ctrl+shit+m)
+- click on dropdown Menu: dimensions on the top tab.
+- select Iphone 12 Pro.
+
+If you see it in normal compuer size, it wont be scaled.
+
+Live website: https://daechi73.github.io/Hackathon2

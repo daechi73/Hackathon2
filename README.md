@@ -2,7 +2,7 @@
 
 Webapplication built for mobile screens. (size of an iphone).
 
-To see in computer chrome browser:
+To see it as mobile device in desktop chrome:
 
 - open google dev tools (ctrl+shift+i)
 - toggle device toolbar (ctrl+shit+m)
@@ -10,5 +10,7 @@ To see in computer chrome browser:
 - select Iphone 12 Pro.
 
 If you see it in normal compuer size, it wont be scaled.
+
+Best to see it on phone !
 
 Live website: https://daechi73.github.io/Hackathon2

@@ -13,6 +13,8 @@ const BodiesOfWaterObjects = () => {
       pollutionLevel: "low",
       img: gredadierPond,
       info: "beautiful place",
+      detailInfo:
+        "A kilometre long and half a kilometre wide, Grenadier Pond offers one of the loveliest vistas in High Park. Although much affected by development onsite and in the surrounding neighbourhood, this large natural pond still provides habitat to a wide assortment of water birds, fish, turtles and other wildlife.",
     },
     {
       name: "West Humber River Bridge and Pond",
@@ -22,6 +24,8 @@ const BodiesOfWaterObjects = () => {
       pollutionLevel: "medium",
       img: westHumber,
       info: "beautiful place",
+      detailInfo:
+        "A kilometre long and half a kilometre wide, Grenadier Pond offers one of the loveliest vistas in High Park. Although much affected by development onsite and in the surrounding neighbourhood, this large natural pond still provides habitat to a wide assortment of water birds, fish, turtles and other wildlife.",
     },
     {
       name: "Humber Valley Pond",
@@ -31,6 +35,8 @@ const BodiesOfWaterObjects = () => {
       pollutionLevel: "high",
       img: humberValley,
       info: "beautiful place",
+      detailInfo:
+        "A kilometre long and half a kilometre wide, Grenadier Pond offers one of the loveliest vistas in High Park. Although much affected by development onsite and in the surrounding neighbourhood, this large natural pond still provides habitat to a wide assortment of water birds, fish, turtles and other wildlife.",
     },
     {
       name: "Sunnyside Lakeshore",
@@ -40,6 +46,8 @@ const BodiesOfWaterObjects = () => {
       pollutionLevel: "low",
       img: sunnyside,
       info: "beautiful place",
+      detailInfo:
+        "A kilometre long and half a kilometre wide, Grenadier Pond offers one of the loveliest vistas in High Park. Although much affected by development onsite and in the surrounding neighbourhood, this large natural pond still provides habitat to a wide assortment of water birds, fish, turtles and other wildlife.",
     },
     {
       name: "Grenadier Pond",
@@ -49,6 +57,8 @@ const BodiesOfWaterObjects = () => {
       pollutionLevel: "low",
       img: gredadierPond,
       info: "beautiful place",
+      detailInfo:
+        "A kilometre long and half a kilometre wide, Grenadier Pond offers one of the loveliest vistas in High Park. Although much affected by development onsite and in the surrounding neighbourhood, this large natural pond still provides habitat to a wide assortment of water birds, fish, turtles and other wildlife.",
     },
     {
       name: "West Humber River Bridge and Pond",
@@ -58,6 +68,8 @@ const BodiesOfWaterObjects = () => {
       pollutionLevel: "medium",
       img: westHumber,
       info: "beautiful place",
+      detailInfo:
+        "A kilometre long and half a kilometre wide, Grenadier Pond offers one of the loveliest vistas in High Park. Although much affected by development onsite and in the surrounding neighbourhood, this large natural pond still provides habitat to a wide assortment of water birds, fish, turtles and other wildlife.",
     },
     {
       name: "Humber Valley Pond",
@@ -67,6 +79,8 @@ const BodiesOfWaterObjects = () => {
       pollutionLevel: "high",
       img: humberValley,
       info: "beautiful place",
+      detailInfo:
+        "A kilometre long and half a kilometre wide, Grenadier Pond offers one of the loveliest vistas in High Park. Although much affected by development onsite and in the surrounding neighbourhood, this large natural pond still provides habitat to a wide assortment of water birds, fish, turtles and other wildlife.",
     },
     {
       name: "Sunnyside Lakeshore",
@@ -76,6 +90,8 @@ const BodiesOfWaterObjects = () => {
       pollutionLevel: "low",
       img: sunnyside,
       info: "beautiful place",
+      detailInfo:
+        "A kilometre long and half a kilometre wide, Grenadier Pond offers one of the loveliest vistas in High Park. Although much affected by development onsite and in the surrounding neighbourhood, this large natural pond still provides habitat to a wide assortment of water birds, fish, turtles and other wildlife.",
     },
   ];
   return bodiesOfWater;

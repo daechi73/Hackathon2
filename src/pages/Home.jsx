@@ -21,7 +21,7 @@ const Home = (props) => {
             return (
               <MyLink
                 key={i}
-                to="/home/bodyOfWaterInfo"
+                to={"/bodyOfWaterInfo/" + body.name}
                 text={
                   <InfoCard
                     className="home-waterbody-infoCard"
@@ -49,7 +49,7 @@ const Home = (props) => {
             return (
               <MyLink
                 key={i}
-                to="/home/speciesInfo"
+                to={"/home/bodyOfWaterInfof" + fish.name}
                 text={
                   <InfoCard
                     className="home-species-infoCard"

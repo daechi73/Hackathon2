@@ -19,13 +19,18 @@ const ExploreScreen = (props) => {
     const bodies = [Img, Img, Img, Img];
     const bodiesToRender = props.bodiesOfWater.map((body, i) => {
       return (
-        <InfoCard
+        <MyLink
           key={i}
-          className="BodiesOfWater-waterbody-infoCard"
-          imgClassName="BodiesOfWater-waterbody-infoCard-img"
-          src={body.img}
-          name={body.name}
-          subInfo={body.location}
+          to={"/bodyOfWaterInfo/" + body.name}
+          text={
+            <InfoCard
+              className="BodiesOfWater-waterbody-infoCard"
+              imgClassName="BodiesOfWater-waterbody-infoCard-img"
+              src={body.img}
+              name={body.name}
+              subInfo={body.location}
+            />
+          }
         />
       );
     });

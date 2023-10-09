@@ -19,6 +19,7 @@ import BodyOfWaterInfo from "./pages/BodyOfWaterInfo";
 import Profile from "./pages/Profile";
 import BodiesOfWaterObjects from "./components/BodiesOfWaterObjects";
 import SpeciesObjects from "./components/SpeciesObjects";
+import ProfessionalPage from "./pages/ProfessionalPage";
 
 function App() {
   // const [startPage, setStartPage] = useState(true);
@@ -39,9 +40,9 @@ function App() {
     }, 7000);
   }, []);
 
-  if (loadingPage) return <LoadingScreen />;
-  console.log(species);
-  console.log(bodiesOfWater);
+  // if (loadingPage) return <LoadingScreen />; //uncomment for production
+  // console.log(species);
+  // console.log(bodiesOfWater);
   console.log(name);
   return (
     <div className="container-main">
@@ -63,8 +64,12 @@ function App() {
         <CommunityPostScreen />
       ) : name === "speciesInfo" ? (
         <SpeciesInfo species={species} bodiesOfWater={bodiesOfWater} />
-      ) : name === "bodyOfWaterInfo" ? (
-        <BodyOfWaterInfo species={species} bodiesOfWater={bodiesOfWater} />
+      ) : name === "bodyOfWaterInfo" ||
+        name === "Grenadier Pond" ||
+        name === "West Humber River Bridge and Pond" ||
+        name === "Humber Valley Pond" ||
+        name === "Sunnyside Lakeshore" ? (
+        <BodyOfWaterInfo bodiesOfWater={bodiesOfWater} name={name} />
       ) : name === "communityUser" ? (
         <CommunityUserScreen />
       ) : (

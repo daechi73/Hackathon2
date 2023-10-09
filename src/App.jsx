@@ -28,20 +28,20 @@ function App() {
   const bodiesOfWater = BodiesOfWaterObjects();
   const species = SpeciesObjects();
 
-  // useEffect(() => {
-  //   // setTimeout(() => {
-  //   //   setLoadingPage(true);
-  //   //   setStartPage(false);
-  //   // }, 3000);
-  //   setTimeout(() => {
-  //     setLoadingPage(false);
-  //     setStartApp(true);
-  //   }, 7000);
-  // }, []);
+  useEffect(() => {
+    // setTimeout(() => {
+    //   setLoadingPage(true);
+    //   setStartPage(false);
+    // }, 3000);
+    setTimeout(() => {
+      setLoadingPage(false);
+      setStartApp(true);
+    }, 7000);
+  }, []);
 
-  // if (loadingPage) return <LoadingScreen />;
-  // console.log(species);
-  // console.log(bodiesOfWater);
+  if (loadingPage) return <LoadingScreen />;
+  console.log(species);
+  console.log(bodiesOfWater);
   console.log(name);
   return (
     <div className="container-main">

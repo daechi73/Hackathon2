@@ -6,10 +6,14 @@ import InfoCard from "../components/InfoCard";
 import Img from "../assets/imgs/GrenadierPond.jpg";
 import Img2 from "../assets/imgs/fish.jpg";
 import { useState } from "react";
+import MyLink from "../components/MyLink";
 
 const ExploreScreen = (props) => {
   const [render, setRender] = useState("bodies");
-
+  const handleClick = (e) => {
+    if (e.target.textContent === "WATERBODIES") setRender("bodies");
+    if (e.target.textContent === "SPECIES") setRender("fish");
+  };
   const renderBodies = () => {
     const bodies = [Img, Img, Img, Img];
     const bodiesToRender = bodies.map((body, i) => {
@@ -26,7 +30,7 @@ const ExploreScreen = (props) => {
     });
     return bodiesToRender;
   };
-  const renderFishes = () => {
+  const renderFish = () => {
     const species = [Img2, Img2, Img2, Img2];
     const speciesToRender = species.map((fish, i) => {
       return (
@@ -40,6 +44,7 @@ const ExploreScreen = (props) => {
         />
       );
     });
+    return speciesToRender;
   };
 
   return (
@@ -55,13 +60,16 @@ const ExploreScreen = (props) => {
 
       <div className="selection-container">
         <div className="selectionflex">
-          <button className="selection-button">WATERBODIES</button>
-          <button className="selection-button">SPECIES</button>
-          <button className="selection-button">EVENTS</button>
+          <button className="selection-button" onClick={handleClick}>
+            WATERBODIES
+          </button>
+          <button className="selection-button" onClick={handleClick}>
+            SPECIES
+          </button>
         </div>
       </div>
       <div className="exploreCard-infoCards">
-        {render === "bodies" ? renderBodies() : ""}
+        {render === "bodies" ? renderBodies() : renderFish()}
       </div>
     </div>
   );

@@ -53,8 +53,6 @@ const CommunityUserScreen = () => {
       </div>
 
       <div></div>
-
-      <Nav />
     </div>
   );
 };

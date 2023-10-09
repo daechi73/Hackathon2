@@ -17,33 +17,65 @@ const Home = () => {
           </div>
         </div>
         <div className="home-waterbody-infoCards">
-          <InfoCard
-            className="home-waterbody-infoCard"
-            imgClassName="home-waterbody-infoCard-img"
-            src={Img}
-            name="Grenadier Pond"
-            subInfo="Toronto, Canada"
+          <MyLink
+            to="/home/bodyOfWaterInfo"
+            text={
+              <InfoCard
+                className="home-waterbody-infoCard"
+                imgClassName="home-waterbody-infoCard-img"
+                src={Img}
+                name="Grenadier Pond"
+                subInfo="Toronto, Canada"
+              />
+            }
           />
-          <InfoCard
-            className="home-waterbody-infoCard"
-            imgClassName="home-waterbody-infoCard-img"
-            src={Img}
-            name="Grenadier Pond"
-            subInfo="Toronto, Canada"
+          <MyLink
+            to="/home/bodyOfWaterInfo"
+            text={
+              <InfoCard
+                className="home-waterbody-infoCard"
+                imgClassName="home-waterbody-infoCard-img"
+                src={Img}
+                name="Grenadier Pond"
+                subInfo="Toronto, Canada"
+              />
+            }
           />
-          <InfoCard
-            className="home-waterbody-infoCard"
-            imgClassName="home-waterbody-infoCard-img"
-            src={Img}
-            name="Grenadier Pond"
-            subInfo="Toronto, Canada"
+          <MyLink
+            to="/home/bodyOfWaterInfo"
+            text={
+              <InfoCard
+                className="home-waterbody-infoCard"
+                imgClassName="home-waterbody-infoCard-img"
+                src={Img}
+                name="Grenadier Pond"
+                subInfo="Toronto, Canada"
+              />
+            }
           />
-          <InfoCard
-            className="home-waterbody-infoCard"
-            imgClassName="home-waterbody-infoCard-img"
-            src={Img}
-            name="Grenadier Pond"
-            subInfo="Toronto, Canada"
+          <MyLink
+            to="/home/bodyOfWaterInfo"
+            text={
+              <InfoCard
+                className="home-waterbody-infoCard"
+                imgClassName="home-waterbody-infoCard-img"
+                src={Img}
+                name="Grenadier Pond"
+                subInfo="Toronto, Canada"
+              />
+            }
+          />
+          <MyLink
+            to="/home/bodyOfWaterInfo"
+            text={
+              <InfoCard
+                className="home-waterbody-infoCard"
+                imgClassName="home-waterbody-infoCard-img"
+                src={Img}
+                name="Grenadier Pond"
+                subInfo="Toronto, Canada"
+              />
+            }
           />
         </div>
       </div>
@@ -54,34 +86,68 @@ const Home = () => {
             <MyLink to="/home/species" text="view" className="homeView" />
           </div>
         </div>
+
         <div className="home-species-infoCards">
-          <InfoCard
-            className="home-species-infoCard"
-            imgClassName="home-species-infoCard-img"
-            src={Img2}
-            name="Fred"
-            subInfo="Gold fish"
+          <MyLink
+            to="/home/speciesInfo"
+            text={
+              <InfoCard
+                className="home-species-infoCard"
+                imgClassName="home-species-infoCard-img"
+                src={Img2}
+                name="Fred"
+                subInfo="Gold fish"
+              />
+            }
           />
-          <InfoCard
-            className="home-species-infoCard"
-            imgClassName="home-species-infoCard-img"
-            src={Img2}
-            name="Fred"
-            subInfo="Gold fish"
+          <MyLink
+            to="/home/speciesInfo"
+            text={
+              <InfoCard
+                className="home-species-infoCard"
+                imgClassName="home-species-infoCard-img"
+                src={Img2}
+                name="Fred"
+                subInfo="Gold fish"
+              />
+            }
           />
-          <InfoCard
-            className="home-species-infoCard"
-            imgClassName="home-species-infoCard-img"
-            src={Img2}
-            name="Fred"
-            subInfo="Gold fish"
+          <MyLink
+            to="/home/speciesInfo"
+            text={
+              <InfoCard
+                className="home-species-infoCard"
+                imgClassName="home-species-infoCard-img"
+                src={Img2}
+                name="Fred"
+                subInfo="Gold fish"
+              />
+            }
           />
-          <InfoCard
-            className="home-species-infoCard"
-            imgClassName="home-species-infoCard-img"
-            src={Img2}
-            name="Fred"
-            subInfo="Gold fish"
+          <MyLink
+            to="/home/speciesInfo"
+            text={
+              <InfoCard
+                className="home-species-infoCard"
+                imgClassName="home-species-infoCard-img"
+                src={Img2}
+                name="Fred"
+                subInfo="Gold fish"
+              />
+            }
+          />
+
+          <MyLink
+            to="/home/speciesInfo"
+            text={
+              <InfoCard
+                className="home-species-infoCard"
+                imgClassName="home-species-infoCard-img"
+                src={Img2}
+                name="Fred"
+                subInfo="Gold fish"
+              />
+            }
           />
         </div>
       </div>

@@ -14,27 +14,34 @@ import ErrorPage from "./pages/ErrorPage";
 import CommunityPostScreen from "./pages/CommunityPostScreen";
 import CommunityScreen from "./pages/CommunityScreen";
 import CommunityUserScreen from "./pages/CommunityUserScreen";
+import SpeciesInfo from "./pages/SpeciesInfo";
+import BodyOfWaterInfo from "./pages/BodyOfWaterInfo";
+import Profile from "./pages/Profile";
+import BodiesOfWaterObjects from "./components/BodiesOfWaterObjects";
+import SpeciesObjects from "./components/SpeciesObjects";
 
 function App() {
-  const [startPage, setStartPage] = useState(true);
-  const [loadingPage, setLoadingPage] = useState(false);
-  const [startApp, setStartApp] = useState(false); //false for product true for dev
+  // const [startPage, setStartPage] = useState(true);
+  const [loadingPage, setLoadingPage] = useState(true);
+  const [startApp, setStartApp] = useState(false);
   const { name } = useParams();
+  const bodiesOfWater = BodiesOfWaterObjects();
+  const species = SpeciesObjects();
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoadingPage(true);
-      setStartPage(false);
-    }, 3000);
-    setTimeout(() => {
-      setLoadingPage(false);
-      setStartApp(true);
-    }, 7000);
-  }, []);
+  // useEffect(() => {
+  //   // setTimeout(() => {
+  //   //   setLoadingPage(true);
+  //   //   setStartPage(false);
+  //   // }, 3000);
+  //   setTimeout(() => {
+  //     setLoadingPage(false);
+  //     setStartApp(true);
+  //   }, 7000);
+  // }, []);
 
-  if (startPage) return <StartScreen />;
-  if (loadingPage) return <LoadingScreen />;
-
+  // if (loadingPage) return <LoadingScreen />;
+  console.log(species);
+  console.log(bodiesOfWater);
   console.log(name);
   return (
     <div className="container-main">
@@ -45,16 +52,25 @@ function App() {
       ) : name === "explore" ? (
         <ExploreScreen />
       ) : name === "community" ? (
-        "community"
+        <CommunityScreen />
       ) : name === "profile" ? (
-        "profile"
+        <Profile />
       ) : name === "waterbodies" ? (
         <BodiesOfWater />
       ) : name === "species" ? (
         <Species />
+      ) : name === "communityPost" ? (
+        <CommunityPostScreen />
+      ) : name === "speciesInfo" ? (
+        <SpeciesInfo />
+      ) : name === "bodyOfWaterInfo" ? (
+        <BodyOfWaterInfo />
+      ) : name === "communityUser" ? (
+        <CommunityUserScreen />
       ) : (
         <ErrorPage />
       )}
+
       <Nav />
     </div>
   );

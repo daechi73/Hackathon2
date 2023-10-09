@@ -1,8 +1,7 @@
 import "../style/InfoCard.css";
-
 const InfoCard = (props) => {
   return (
-    <div className={"infoCard " + props.className}>
+    <div className={"infoCard " + props.className} onClick={props.onClick}>
       <img className={props.imgClassName} src={props.src} alt={props.src} />
       <div className="infoCard-info">
         <div className="infoCard-name">{props.name}</div>

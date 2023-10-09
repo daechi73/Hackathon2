@@ -1,5 +1,6 @@
 import "../style/CommunityPostScreen.css";
 import pond from "../assets/imgs/GrenadierPond.jpg";
+import MyLink from "../components/MyLink";
 
 const CommunityPostScreen = () => {
   return (
@@ -14,7 +15,7 @@ const CommunityPostScreen = () => {
         <div className="text_container">
           <div className="user-container">
             <i className="fa fa-user" aria-hidden="true"></i>
-            <p>User123</p>
+            <MyLink to="/community/communityUser" text={<p>User123</p>} />
           </div>
 
           <div>

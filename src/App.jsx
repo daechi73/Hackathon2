@@ -14,12 +14,11 @@ import ErrorPage from "./pages/ErrorPage";
 import CommunityPostScreen from "./pages/CommunityPostScreen";
 import CommunityScreen from "./pages/CommunityScreen";
 import CommunityUserScreen from "./pages/CommunityUserScreen";
-import SpeciesInfo from "./pages/SpeciesInfo";
 import BodyOfWaterInfo from "./pages/BodyOfWaterInfo";
 import Profile from "./pages/Profile";
 import BodiesOfWaterObjects from "./components/BodiesOfWaterObjects";
 import SpeciesObjects from "./components/SpeciesObjects";
-import ProfessionalPage from "./pages/ProfessionalPage";
+import SpeciesDetail from "./pages/SpeciesDetail";
 
 function App() {
   // const [startPage, setStartPage] = useState(true);
@@ -40,14 +39,16 @@ function App() {
     }, 7000);
   }, []);
 
-  // if (loadingPage) return <LoadingScreen />; //uncomment for production
+  if (loadingPage) return <LoadingScreen />; //uncomment for production
   // console.log(species);
   // console.log(bodiesOfWater);
   console.log(name);
   return (
     <div className="container-main">
       <StatusBar />
-      {startApp && <ExploreScreen /> && !name}
+      {startApp && !name && (
+        <ExploreScreen species={species} bodiesOfWater={bodiesOfWater} />
+      )}
       {name === "home" ? (
         <Home species={species} bodiesOfWater={bodiesOfWater} />
       ) : name === "explore" ? (
@@ -62,8 +63,12 @@ function App() {
         <Species species={species} bodiesOfWater={bodiesOfWater} />
       ) : name === "communityPost" ? (
         <CommunityPostScreen />
-      ) : name === "speciesInfo" ? (
-        <SpeciesInfo species={species} bodiesOfWater={bodiesOfWater} />
+      ) : name === "speciesInfo" ||
+        name === "Cod Fish" ||
+        name === "Clown Fish" ||
+        name === "Sable Fish" ||
+        name === "Trout Fish" ? (
+        <SpeciesDetail species={species} name={name} />
       ) : name === "bodyOfWaterInfo" ||
         name === "Grenadier Pond" ||
         name === "West Humber River Bridge and Pond" ||
@@ -75,7 +80,6 @@ function App() {
       ) : (
         <ErrorPage />
       )}
-
       <Nav />
     </div>
   );

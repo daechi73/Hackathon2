@@ -42,7 +42,7 @@ const ExploreScreen = (props) => {
       return (
         <MyLink
           key={i}
-          to="/home/speciesInfo"
+          to={"/speciesInfo/" + fish.name}
           text={
             <InfoCard
               className="home-species-infoCard"

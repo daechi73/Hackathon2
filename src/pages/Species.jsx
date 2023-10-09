@@ -3,6 +3,7 @@ import InfoCard from "../components/InfoCard";
 import Img from "../assets/imgs/GrenadierPond.jpg";
 import Img2 from "../assets/imgs/fish.jpg";
 import Discover from "../components/Discover";
+import MyLink from "../components/MyLink";
 
 const Species = (props) => {
   return (
@@ -12,128 +13,21 @@ const Species = (props) => {
       <div className="species-species-infoCards">
         {props.species.map((fish, i) => {
           return (
-            <InfoCard
+            <MyLink
               key={i}
-              className="species-species-infoCard"
-              imgClassName="species-species-infoCard-img"
-              src={fish.img}
-              name={fish.name}
-              subInfo={fish.info}
+              to={"/speciesInfo/" + fish.name}
+              text={
+                <InfoCard
+                  className="species-species-infoCard"
+                  imgClassName="species-species-infoCard-img"
+                  src={fish.img}
+                  name={fish.name}
+                  subInfo={fish.info}
+                />
+              }
             />
           );
         })}
-        {/* <InfoCard
-          className="species-species-infoCard"
-          imgClassName="species-species-infoCard-img"
-          src={Img2}
-          name="Fred"
-          subInfo="Gold fish"
-        />
-        <InfoCard
-          className="species-species-infoCard"
-          imgClassName="species-species-infoCard-img"
-          src={Img2}
-          name="Fred"
-          subInfo="Gold fish"
-        />
-        <InfoCard
-          className="species-species-infoCard"
-          imgClassName="species-species-infoCard-img"
-          src={Img2}
-          name="Fred"
-          subInfo="Gold fish"
-        />
-        <InfoCard
-          className="species-species-infoCard"
-          imgClassName="species-species-infoCard-img"
-          src={Img2}
-          name="Fred"
-          subInfo="Gold fish"
-        />
-        <InfoCard
-          className="species-species-infoCard"
-          imgClassName="species-species-infoCard-img"
-          src={Img2}
-          name="Fred"
-          subInfo="Gold fish"
-        />
-        <InfoCard
-          className="species-species-infoCard"
-          imgClassName="species-species-infoCard-img"
-          src={Img2}
-          name="Fred"
-          subInfo="Gold fish"
-        />
-        <InfoCard
-          className="species-species-infoCard"
-          imgClassName="species-species-infoCard-img"
-          src={Img2}
-          name="Fred"
-          subInfo="Gold fish"
-        />
-        <InfoCard
-          className="species-species-infoCard"
-          imgClassName="species-species-infoCard-img"
-          src={Img2}
-          name="Fred"
-          subInfo="Gold fish"
-        />
-        <InfoCard
-          className="species-species-infoCard"
-          imgClassName="species-species-infoCard-img"
-          src={Img2}
-          name="Fred"
-          subInfo="Gold fish"
-        />
-        <InfoCard
-          className="species-species-infoCard"
-          imgClassName="species-species-infoCard-img"
-          src={Img2}
-          name="Fred"
-          subInfo="Gold fish"
-        />
-        <InfoCard
-          className="species-species-infoCard"
-          imgClassName="species-species-infoCard-img"
-          src={Img2}
-          name="Fred"
-          subInfo="Gold fish"
-        />
-        <InfoCard
-          className="species-species-infoCard"
-          imgClassName="species-species-infoCard-img"
-          src={Img2}
-          name="Fred"
-          subInfo="Gold fish"
-        />
-        <InfoCard
-          className="species-species-infoCard"
-          imgClassName="species-species-infoCard-img"
-          src={Img2}
-          name="Fred"
-          subInfo="Gold fish"
-        />
-        <InfoCard
-          className="species-species-infoCard"
-          imgClassName="species-species-infoCard-img"
-          src={Img2}
-          name="Fred"
-          subInfo="Gold fish"
-        />
-        <InfoCard
-          className="species-species-infoCard"
-          imgClassName="species-species-infoCard-img"
-          src={Img2}
-          name="Fred"
-          subInfo="Gold fish"
-        />
-        <InfoCard
-          className="species-species-infoCard"
-          imgClassName="species-species-infoCard-img"
-          src={Img2}
-          name="Fred"
-          subInfo="Gold fish"
-        /> */}
       </div>
     </div>
   );

@@ -5,81 +5,87 @@ import InfoCard from "../components/InfoCard.jsx";
 import fish from "../assets/imgs/fish.jpg";
 import Img from "../assets/imgs/GrenadierPond.jpg";
 
-const SpeciesDetail = () => {
+const SpeciesDetail = (props) => {
+  const specieToRender = props.species.filter((fish) => {
+    return fish.name === props.name;
+  });
+
   return (
     <div className="container">
+      <SpeciesInfo
+        endangered={specieToRender[0].endangered}
+        src={specieToRender[0].img}
+        name={specieToRender[0].name}
+        subname={specieToRender[0].subname}
+        lifeExpenctancy={specieToRender[0].lifeExp}
+        length={specieToRender[0].length}
+        weight={specieToRender[0].weight}
+        description={specieToRender[0].desc}
+        interestingFact={specieToRender[0].fact}
+      />
 
-        <SpeciesInfo
-            endangered="ENDANGERED"
-            src={fish}
-            name="Atlantic Cod"
-            subname="Gadus morhua"
-            lifeExpenctancy="Up to 25 years"
-            length="45-55 cm"
-            weight="2.2 Kg"
-            description="The Atlantic Cod has a generally spotted body, a leaden-silvery peritoneum with black dots, small eyes, a stout caudal peduncle, and a lateral line that is paler in colour than the adjacent areas of the body."
-            interestingFact="The Laurentian North population of Atlantic Cod has declined between 76% and 89% over the last three generations (about 30 years)."
-        />
-
-        <div className="SpeciesLocation">
-            <div id="SpeciesLocationTags">
-                <InfoCard
-                className="home-waterbody-infoCard"
-                imgClassName="home-waterbody-infoCard-img"
-                src={Img}
-                name="Grenadier Pond"
-                subInfo="Toronto, Canada"/>
-            </div>
-            <div id="SpeciesLocationTags">
-                <InfoCard
-                className="home-waterbody-infoCard"
-                imgClassName="home-waterbody-infoCard-img"
-                src={Img}
-                name="Grenadier Pond"
-                subInfo="Toronto, Canada"/>
-            </div>
-            <div id="SpeciesLocationTags">
-                <InfoCard
-                className="home-waterbody-infoCard"
-                imgClassName="home-waterbody-infoCard-img"
-                src={Img}
-                name="Grenadier Pond"
-                subInfo="Toronto, Canada"/>
-            </div>
+      <div className="SpeciesLocation">
+        <div id="SpeciesLocationTags">
+          <InfoCard
+            className="home-waterbody-infoCard"
+            imgClassName="home-waterbody-infoCard-img"
+            src={Img}
+            name="Grenadier Pond"
+            subInfo="Toronto, Canada"
+          />
         </div>
-        <div className="SpeciesRelatedText">
-            <p>Related Species</p>
+        <div id="SpeciesLocationTags">
+          <InfoCard
+            className="home-waterbody-infoCard"
+            imgClassName="home-waterbody-infoCard-img"
+            src={Img}
+            name="Grenadier Pond"
+            subInfo="Toronto, Canada"
+          />
         </div>
-
-        <div className="SpeciesRelated">
-
-            <div id="SpeciesLocationTags">
-                <InfoCard
-                className="home-waterbody-infoCard"
-                imgClassName="home-waterbody-infoCard-img"
-                src={Img}
-                name="Grenadier Pond"
-                subInfo="Toronto, Canada"/>
-            </div>
-            <div id="SpeciesLocationTags">
-                <InfoCard
-                className="home-waterbody-infoCard"
-                imgClassName="home-waterbody-infoCard-img"
-                src={Img}
-                name="Grenadier Pond"
-                subInfo="Toronto, Canada"/>
-            </div>
-            <div id="SpeciesLocationTags">
-                <InfoCard
-                className="home-waterbody-infoCard"
-                imgClassName="home-waterbody-infoCard-img"
-                src={Img}
-                name="Grenadier Pond"
-                subInfo="Toronto, Canada"/>
-            </div>
+        <div id="SpeciesLocationTags">
+          <InfoCard
+            className="home-waterbody-infoCard"
+            imgClassName="home-waterbody-infoCard-img"
+            src={Img}
+            name="Grenadier Pond"
+            subInfo="Toronto, Canada"
+          />
         </div>
+      </div>
+      <div className="SpeciesRelatedText">
+        <p>Related Species</p>
+      </div>
 
-
+      <div className="SpeciesRelated">
+        <div id="SpeciesLocationTags">
+          <InfoCard
+            className="home-waterbody-infoCard"
+            imgClassName="home-waterbody-infoCard-img"
+            src={Img}
+            name="Grenadier Pond"
+            subInfo="Toronto, Canada"
+          />
+        </div>
+        <div id="SpeciesLocationTags">
+          <InfoCard
+            className="home-waterbody-infoCard"
+            imgClassName="home-waterbody-infoCard-img"
+            src={Img}
+            name="Grenadier Pond"
+            subInfo="Toronto, Canada"
+          />
+        </div>
+        <div id="SpeciesLocationTags">
+          <InfoCard
+            className="home-waterbody-infoCard"
+            imgClassName="home-waterbody-infoCard-img"
+            src={Img}
+            name="Grenadier Pond"
+            subInfo="Toronto, Canada"
+          />
+        </div>
+      </div>
     </div>
   );
 };

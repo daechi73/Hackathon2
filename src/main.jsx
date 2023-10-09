@@ -11,6 +11,7 @@ const router = createBrowserRouter([
   { path: "/home/:name", element: <App /> },
   { path: "/community/:name", element: <App /> },
   { path: "/bodyOfWaterInfo/:name", element: <App /> },
+  { path: "/speciesInfo/:name", element: <App /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

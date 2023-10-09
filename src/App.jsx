@@ -14,7 +14,7 @@ import ErrorPage from "./pages/ErrorPage";
 import CommunityPostScreen from "./pages/CommunityPostScreen";
 import CommunityScreen from "./pages/CommunityScreen";
 import CommunityUserScreen from "./pages/CommunityUserScreen";
-
+import ProfessionalPage from "./pages/ProfessionalPage.jsx";
 function App() {
   const [startPage, setStartPage] = useState(true);
   const [loadingPage, setLoadingPage] = useState(false);
@@ -32,30 +32,31 @@ function App() {
     }, 7000);
   }, []);
 
-  if (startPage) return <StartScreen />;
-  if (loadingPage) return <LoadingScreen />;
+  // if (startPage) return <StartScreen />;
+  // if (loadingPage) return <LoadingScreen />;
 
   console.log(name);
   return (
     <div className="container-main">
-      <StatusBar />
-      {startApp && <ExploreScreen /> && !name}
-      {name === "home" ? (
-        <Home />
-      ) : name === "explore" ? (
-        <ExploreScreen />
-      ) : name === "community" ? (
-        "community"
-      ) : name === "profile" ? (
-        "profile"
-      ) : name === "waterbodies" ? (
-        <BodiesOfWater />
-      ) : name === "species" ? (
-        <Species />
-      ) : (
-        <ErrorPage />
-      )}
-      <Nav />
+      {/*<StatusBar />*/}
+      {/*{startApp && <ExploreScreen /> && !name}*/}
+      {/*{name === "home" ? (*/}
+      {/*  <Home />*/}
+      {/*) : name === "explore" ? (*/}
+      {/*  <ExploreScreen />*/}
+      {/*) : name === "community" ? (*/}
+      {/*  "community"*/}
+      {/*) : name === "profile" ? (*/}
+      {/*  "profile"*/}
+      {/*) : name === "waterbodies" ? (*/}
+      {/*  <BodiesOfWater />*/}
+      {/*) : name === "species" ? (*/}
+      {/*  <Species />*/}
+      {/*) : (*/}
+      {/*  <ErrorPage />*/}
+      {/*)}*/}
+      {/*<Nav />*/}
+      <ProfessionalPage/>
     </div>
   );
 }

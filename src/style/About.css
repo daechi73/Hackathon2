@@ -1,0 +1,41 @@
+.imageClassName {
+    width: 100vw;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.aboutMoveUp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: left;
+    color: white;
+    max-width: 90vw;
+}
+
+.ImageAbout p  {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.ImageDescriptionText {
+    font-size: 12px;
+}
+
+.ImageName  {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ImageLocation {
+    margin-top: -30px;
+}
+

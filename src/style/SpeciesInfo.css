@@ -1,0 +1,60 @@
+.speciesImageName {
+    max-width: 100vw;
+}
+
+.SpeciesEndangered {
+    background: #66cccc;
+    color: white;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 10px;
+    padding: 0px 10px;
+    font-size: 12px;
+}
+
+.SpeciesName {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 10px;
+    color: grey;
+}
+
+.SpeciesSubName {
+    margin-top: -50px;
+    font-size: 20px;
+    margin-left: 10px;
+    color: grey;
+    font-style: italic;
+}
+
+.SpciesLifeExpectancy {
+    margin-left: 10px;
+    color: #5e5c5c;
+}
+
+.SpeciesLength {
+    margin-left: 10px;
+    color: #5e5c5c;
+}
+
+.SpeciesWeight {
+    margin-left: 10px;
+    color: #5e5c5c;
+}
+
+.SpeciesDescription {
+    margin-left: 10px;
+    color: #5e5c5c;
+}
+
+.SpeciesInterestingFact {
+    margin-left: 10px;
+    color: #5e5c5c;
+}
+
+.SpeciesFind{
+    margin-left: 10px;
+    color: #5e5c5c;
+}
+
+

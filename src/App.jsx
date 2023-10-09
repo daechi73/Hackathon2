@@ -40,31 +40,31 @@ function App() {
   // }, []);
 
   // if (loadingPage) return <LoadingScreen />;
-  console.log(species);
-  console.log(bodiesOfWater);
+  // console.log(species);
+  // console.log(bodiesOfWater);
   console.log(name);
   return (
     <div className="container-main">
       <StatusBar />
       {startApp && <ExploreScreen /> && !name}
       {name === "home" ? (
-        <Home />
+        <Home species={species} bodiesOfWater={bodiesOfWater} />
       ) : name === "explore" ? (
-        <ExploreScreen />
+        <ExploreScreen species={species} bodiesOfWater={bodiesOfWater} />
       ) : name === "community" ? (
         <CommunityScreen />
       ) : name === "profile" ? (
         <Profile />
       ) : name === "waterbodies" ? (
-        <BodiesOfWater />
+        <BodiesOfWater species={species} bodiesOfWater={bodiesOfWater} />
       ) : name === "species" ? (
-        <Species />
+        <Species species={species} bodiesOfWater={bodiesOfWater} />
       ) : name === "communityPost" ? (
         <CommunityPostScreen />
       ) : name === "speciesInfo" ? (
-        <SpeciesInfo />
+        <SpeciesInfo species={species} bodiesOfWater={bodiesOfWater} />
       ) : name === "bodyOfWaterInfo" ? (
-        <BodyOfWaterInfo />
+        <BodyOfWaterInfo species={species} bodiesOfWater={bodiesOfWater} />
       ) : name === "communityUser" ? (
         <CommunityUserScreen />
       ) : (

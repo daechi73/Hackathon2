@@ -5,7 +5,7 @@ import Img2 from "../assets/imgs/fish.jpg";
 import Discover from "../components/Discover";
 import MyLink from "../components/MyLink";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <div className="home">
       <Discover />
@@ -17,66 +17,23 @@ const Home = () => {
           </div>
         </div>
         <div className="home-waterbody-infoCards">
-          <MyLink
-            to="/home/bodyOfWaterInfo"
-            text={
-              <InfoCard
-                className="home-waterbody-infoCard"
-                imgClassName="home-waterbody-infoCard-img"
-                src={Img}
-                name="Grenadier Pond"
-                subInfo="Toronto, Canada"
+          {props.bodiesOfWater.map((body, i) => {
+            return (
+              <MyLink
+                key={i}
+                to="/home/bodyOfWaterInfo"
+                text={
+                  <InfoCard
+                    className="home-waterbody-infoCard"
+                    imgClassName="home-waterbody-infoCard-img"
+                    src={body.img}
+                    name={body.name}
+                    subInfo={body.info}
+                  />
+                }
               />
-            }
-          />
-          <MyLink
-            to="/home/bodyOfWaterInfo"
-            text={
-              <InfoCard
-                className="home-waterbody-infoCard"
-                imgClassName="home-waterbody-infoCard-img"
-                src={Img}
-                name="Grenadier Pond"
-                subInfo="Toronto, Canada"
-              />
-            }
-          />
-          <MyLink
-            to="/home/bodyOfWaterInfo"
-            text={
-              <InfoCard
-                className="home-waterbody-infoCard"
-                imgClassName="home-waterbody-infoCard-img"
-                src={Img}
-                name="Grenadier Pond"
-                subInfo="Toronto, Canada"
-              />
-            }
-          />
-          <MyLink
-            to="/home/bodyOfWaterInfo"
-            text={
-              <InfoCard
-                className="home-waterbody-infoCard"
-                imgClassName="home-waterbody-infoCard-img"
-                src={Img}
-                name="Grenadier Pond"
-                subInfo="Toronto, Canada"
-              />
-            }
-          />
-          <MyLink
-            to="/home/bodyOfWaterInfo"
-            text={
-              <InfoCard
-                className="home-waterbody-infoCard"
-                imgClassName="home-waterbody-infoCard-img"
-                src={Img}
-                name="Grenadier Pond"
-                subInfo="Toronto, Canada"
-              />
-            }
-          />
+            );
+          })}
         </div>
       </div>
       <div className="home-species">
@@ -88,67 +45,23 @@ const Home = () => {
         </div>
 
         <div className="home-species-infoCards">
-          <MyLink
-            to="/home/speciesInfo"
-            text={
-              <InfoCard
-                className="home-species-infoCard"
-                imgClassName="home-species-infoCard-img"
-                src={Img2}
-                name="Fred"
-                subInfo="Gold fish"
+          {props.species.map((fish, i) => {
+            return (
+              <MyLink
+                key={i}
+                to="/home/speciesInfo"
+                text={
+                  <InfoCard
+                    className="home-species-infoCard"
+                    imgClassName="home-species-infoCard-img"
+                    src={fish.img}
+                    name={fish.name}
+                    subInfo={fish.info}
+                  />
+                }
               />
-            }
-          />
-          <MyLink
-            to="/home/speciesInfo"
-            text={
-              <InfoCard
-                className="home-species-infoCard"
-                imgClassName="home-species-infoCard-img"
-                src={Img2}
-                name="Fred"
-                subInfo="Gold fish"
-              />
-            }
-          />
-          <MyLink
-            to="/home/speciesInfo"
-            text={
-              <InfoCard
-                className="home-species-infoCard"
-                imgClassName="home-species-infoCard-img"
-                src={Img2}
-                name="Fred"
-                subInfo="Gold fish"
-              />
-            }
-          />
-          <MyLink
-            to="/home/speciesInfo"
-            text={
-              <InfoCard
-                className="home-species-infoCard"
-                imgClassName="home-species-infoCard-img"
-                src={Img2}
-                name="Fred"
-                subInfo="Gold fish"
-              />
-            }
-          />
-
-          <MyLink
-            to="/home/speciesInfo"
-            text={
-              <InfoCard
-                className="home-species-infoCard"
-                imgClassName="home-species-infoCard-img"
-                src={Img2}
-                name="Fred"
-                subInfo="Gold fish"
-              />
-            }
-          />
+            );
+          })}
         </div>
       </div>
     </div>

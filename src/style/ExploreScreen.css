@@ -115,7 +115,8 @@
 }
 .exploreCard-infoCards {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 10px;

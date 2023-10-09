@@ -7,6 +7,7 @@ import Img from "../assets/imgs/GrenadierPond.jpg";
 import Img2 from "../assets/imgs/fish.jpg";
 import { useState } from "react";
 import MyLink from "../components/MyLink";
+import map from "../assets/imgs/dummymap.png";
 
 const ExploreScreen = (props) => {
   const [render, setRender] = useState("bodies");
@@ -16,15 +17,15 @@ const ExploreScreen = (props) => {
   };
   const renderBodies = () => {
     const bodies = [Img, Img, Img, Img];
-    const bodiesToRender = bodies.map((body, i) => {
+    const bodiesToRender = props.bodiesOfWater.map((body, i) => {
       return (
         <InfoCard
           key={i}
           className="BodiesOfWater-waterbody-infoCard"
           imgClassName="BodiesOfWater-waterbody-infoCard-img"
-          src={body}
-          name="Grenadier Pond"
-          subInfo="Toronto, Canada"
+          src={body.img}
+          name={body.name}
+          subInfo={body.location}
         />
       );
     });
@@ -32,15 +33,20 @@ const ExploreScreen = (props) => {
   };
   const renderFish = () => {
     const species = [Img2, Img2, Img2, Img2];
-    const speciesToRender = species.map((fish, i) => {
+    const speciesToRender = props.species.map((fish, i) => {
       return (
-        <InfoCard
+        <MyLink
           key={i}
-          className="BodiesOfWater-waterbody-infoCard"
-          imgClassName="BodiesOfWater-waterbody-infoCard-img"
-          src={fish}
-          name="Grenadier Pond"
-          subInfo="Toronto, Canada"
+          to="/home/speciesInfo"
+          text={
+            <InfoCard
+              className="home-species-infoCard"
+              imgClassName="home-species-infoCard-img"
+              src={fish.img}
+              name={fish.name}
+              subInfo={fish.info}
+            />
+          }
         />
       );
     });
@@ -51,7 +57,7 @@ const ExploreScreen = (props) => {
     <div className="exploreScreen">
       <Discover />
       <div className="container-map_image">
-        <img src="src/assets/dummymap.png" alt="map" className="map_image" />
+        <img src={map} alt="map" className="map_image" />
       </div>
       <div className="container-mapSearch">
         <input type="text" className="mapSearchInput" placeholder="search" />

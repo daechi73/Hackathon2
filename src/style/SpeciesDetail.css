@@ -1,0 +1,22 @@
+.SpeciesLocation {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap
+}
+
+#SpeciesLocationTags {
+    margin: 10px;
+}
+
+.SpeciesRelatedText {
+    font-weight: bold;
+    margin-left: 10px;
+    color: #5e5c5c;
+
+}
+
+.SpeciesRelated {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap
+}
